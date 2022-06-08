@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(images/nature.jfif) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 109vh;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: #ff7200;
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #f97406;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn:focus,.srch:focus{
+    outline: none;
+}
+
+.container{
+    width: 1200px;
+    height: auto;
+    margin: 150px auto 0;
+    color: #fff;
+    display: flex;
+}
+.content-Container{
+    flex: 1;
+    height: 400px;
+}
+.container .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    width: max-content;
+    margin-top: 20px;
+}
+.content-Container h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+}
+
+.container .joinUs{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin: 6px 0 0 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.container .joinUs a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.container .joinUs:hover{
+    background-color: #fff;
+}
+
+.content-Container span{
+    color: #ff7200;
+    font-size: 60px;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.form-Container{
+    flex: 1;
+    margin-left: 30px;
+    width: 360px;
+    height: 400px;
+    background: transparent;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.form-Container p{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+.form-Container p:last-of-type{
+    margin-bottom: 10px;
+}
+.form-Container p:last-of-type span a{
+    text-decoration: none;
+    color: #ff7200;
+}
+h3{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ff7200;
+}
+
+.form-Container form{
+    width: 280px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    transition: 1s;
+}
+form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: 0;
+    background: transparent;
+}
+::placeholder{
+    color: rgb(204, 198, 198);
+}
+.btn-box{
+    width: 100%;
+    margin: 55px auto;
+    text-align: center;
+}
+form button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right,#ff7200,#7a766d);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+#form2{
+    left: 450px;
+}
+#form3{
+    left: 450px;
+}
+#step-row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+    display: none;
+}
+.step-col{
+    width: 120px;
+    position: relative;
+    text-align: center;
+    color: #333;
+}
+#progress{
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(to right,#ff7200,#7a766d) ;
+    transition: 1s;
+}
+#progress::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right:-20px ;
+    top: 0;
+    border-left: 20px solid #ffad06;
+}
